@@ -2,22 +2,32 @@
 <html>
     <link rel="stylesheet" href="styles.css">
     <nav>
+        <section class="nav">
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </section>
     </nav>
     <header>
         <h1>James Yu</h1>
         <h3>Email | Phone Number | LinkedIn | GitHub</h3>
     </header>
     <main>
-        <section>
-            <h2>Education</h2>
-            <h4>CUNY Hunter College</h4>
-            <p>Bachelor of Arts in Computer Science, Minor in Mathematics</p>
-            <ul>
+        <section class="education">
+        <div class="edu-row">
+            <div class="edu-text">
+                <h2>Education</h2>
+                <h4>CUNY Hunter College</h4>
+                <p>Bachelor of Arts in Computer Science, Minor in Mathematics</p>
+                <ul>
                 <li>Recognized on Dean’s List for 4 semesters (2023 – 2025)</li>
                 <li>Relevant Coursework: Data Structures & Algorithms, Relational Databases, Computer Architecture</li>
-            </ul>
+                </ul>
+            </div>
+
+            <img src="assets/placeholder.jpg" alt="Placeholder" class="edu-image">
+            </div>
         </section>
-        <section>
+        <section id="skills">
             <h2>Skills</h2>
             <table>
                 <tr>
@@ -34,7 +44,7 @@
                 </tr>
             </table>
         </section>
-        <section>
+        <section id="projects">
             <h2>Projects</h2>
             <h4>Music Recommendation App </h4>
             <ul>
@@ -50,6 +60,7 @@
                 <li>Implemented personalized features using React Cookies, allowing users to save favorite players and teams for a customized experience.</li>
             </ul>
         </section>
+        <br>
     </main>
     <footer>
         <p>© 2026 James Yu. All rights reserved.</p>

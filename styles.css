@@ -1,0 +1,78 @@
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+header > h3 {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+main{
+    color: navy; /* This sets the text color for the main content to be navy, but the text in the education section is olive because the .education class has higher specificity */
+}
+
+.nav {
+    background-color: darkgray;
+    padding: 10px;
+    display: flex;
+}
+
+.nav > a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav > a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: lightgray;
+}
+
+.education {
+    font-variant: small-caps;
+    color: olive;
+}
+
+.edu-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.education > img {
+    max-width: 200px;
+    height: auto;
+}
+
+#skills {
+    padding: 10px;
+    color: red;
+    text-align: center;
+}
+
+#skills > table {
+   border-collapse: collapse;
+}
+
+#skills > table, 
+#skills > table th,
+#skills > table td {
+  border: 2px solid black;
+}
+
+
+footer {
+    font-size: small;
+    font-style: italic;
+    background-color: gray;
+    padding: 6px;
+    border-radius: 4px;
+}
