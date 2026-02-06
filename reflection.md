@@ -1,1 +1,3 @@
-1. 
+1. The browser sends a GET request to the root directory first (/) and then it sends another GET request to the css file to style the website. Finally, it sends another GET request to get the image in the assets folder.
+
+2. A docker container is an isolated environment that contains libraries and other dependencies and their versions so that a project can be run in any enviroment and get the same result each time. Github pages uses pre-built files that only runs in the way github intends to run them. 
