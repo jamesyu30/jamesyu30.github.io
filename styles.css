@@ -40,6 +40,12 @@ body {
     background-color: lightgray;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .education {
     font-variant: small-caps;
     color: olive;
@@ -81,6 +87,8 @@ footer {
     background-color: gray;
     padding: 6px;
     border-radius: 4px;
+    display: flex;
+    margin-top: 10%;
 }
 
 .navbar {
@@ -142,4 +150,132 @@ footer {
     margin-top: 0;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav > a {
+        margin: 10px 0;
+        font-size: 12px;
+    }
 
+    .nav > a:hover {
+        font-size: 16px;
+    }
+    
+    #showcase-grid {
+        grid-template-columns: auto;
+    }
+
+    #showcase-grid > div {
+        height: 200px;
+    }
+
+    #showcase-grid > div:hover {
+        font-size: 16px;
+    }
+
+    #contents > p {
+        font-size: 12px;
+    }
+
+    header > h1 {
+        font-size: 24px;
+    }
+
+    header > h3 {
+        font-size: 16px;
+    }
+
+    main {
+        font-size: 12px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .nav > a {
+        margin: 0 15px;
+        font-size: 14px;
+    }
+
+    .nav > a:hover {
+        font-size: 18px;
+    }
+    
+    header > h3 {
+        font-size: 18px;
+    }
+
+    #showcase-grid {
+        grid-template-columns: auto auto;
+    }
+
+    #showcase-grid > div {
+        height: 250px;
+    }
+
+    #showcase-grid > div:hover {
+        font-size: 18px;
+    }
+
+    main {
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .nav > a {
+        margin: 0 15px;
+    }
+    
+    #showcase-grid {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .nav > a {
+        margin: 0 15px;
+    }
+    
+    #showcase-grid {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .nav > a {
+        margin: 0 15px;
+    }
+    
+    #showcase-grid {
+        grid-template-columns: auto auto auto;
+    }
+}
